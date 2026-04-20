@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
 :root {
   --orange: #E8740C;
@@ -43,7 +43,8 @@ body {
 .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
 .nav-logo svg { width: 44px; height: 44px; }
 .nav-logo-text { display: flex; flex-direction: column; }
-.nav-logo-title { font-family: 'Jost', sans-serif; font-weight: 800; font-size: 1.25rem; color: var(--orange); letter-spacing: 1px; line-height: 1.1; }
+.nav-logo-title { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 1.25rem; color: var(--orange); letter-spacing: 1px; line-height: 1.1; }
+.goudy-bb, .footer-logo span .goudy-bb { font-family: 'Sorts Mill Goudy', serif; font-weight: 500; }
 .nav-logo-sub { font-size: 0.65rem; color: var(--gray-400); letter-spacing: 2px; text-transform: uppercase; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
@@ -71,7 +72,7 @@ body {
 /* ─── HERO ─── */
 .hero {
   min-height: 100vh; display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg, #1e1e2e 0%, var(--black) 50%, #1e1e2e 100%);
+  background: linear-gradient(135deg, #354249 0%, #3d4c54 50%, #354249 100%);
   position: relative; overflow: hidden; padding: 100px 24px 80px;
 }
 .hero::before {
@@ -129,7 +130,7 @@ body {
 section { padding: 100px 24px; }
 .section-header { text-align: center; margin-bottom: 64px; }
 .section-tag {
-  font-family: 'Jost', sans-serif; font-weight: 700; font-size: 0.75rem;
+  font-family: 'Sorts Mill Goudy', serif; font-weight: 400; font-size: 0.85rem;
   color: var(--orange); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px;
 }
 .section-title {
@@ -340,7 +341,7 @@ footer {
 .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
 .footer-logo { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; }
 .footer-logo svg { width: 36px; height: 36px; }
-.footer-logo span { font-family: 'Jost', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--orange); letter-spacing: 1px; }
+.footer-logo span { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 1.1rem; color: var(--orange); letter-spacing: 1px; }
 .footer-badges { display: flex; justify-content: center; gap: 24px; margin-bottom: 24px; flex-wrap: wrap; }
 .footer-badge {
   display: inline-flex; align-items: center; gap: 8px;
