@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --orange: #E8740C;
@@ -20,7 +20,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   color: var(--gray-900);
   background: var(--white);
   overflow-x: hidden;
@@ -43,11 +43,11 @@ body {
 .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
 .nav-logo svg { width: 44px; height: 44px; }
 .nav-logo-text { display: flex; flex-direction: column; }
-.nav-logo-title { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.25rem; color: var(--orange); letter-spacing: 1px; line-height: 1.1; }
+.nav-logo-title { font-family: 'Jost', sans-serif; font-weight: 800; font-size: 1.25rem; color: var(--orange); letter-spacing: 1px; line-height: 1.1; }
 .nav-logo-sub { font-size: 0.65rem; color: var(--gray-400); letter-spacing: 2px; text-transform: uppercase; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
-  font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.85rem;
+  font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.85rem;
   color: var(--gray-200); text-decoration: none; letter-spacing: 0.5px;
   text-transform: uppercase; transition: color 0.3s; position: relative;
 }
@@ -60,7 +60,7 @@ body {
 .nav-links a:hover::after { transform: scaleX(1); }
 .nav-cta {
   background: var(--orange); color: var(--white); border: none;
-  padding: 10px 24px; border-radius: 6px; font-family: 'Montserrat', sans-serif;
+  padding: 10px 24px; border-radius: 6px; font-family: 'Jost', sans-serif;
   font-weight: 700; font-size: 0.85rem; cursor: pointer; text-decoration: none;
   transition: background 0.3s, transform 0.2s; letter-spacing: 0.5px;
 }
@@ -92,12 +92,12 @@ body {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(232, 116, 12, 0.12); border: 1px solid rgba(232, 116, 12, 0.3);
   padding: 8px 20px; border-radius: 50px; margin-bottom: 32px;
-  font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 700;
+  font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 700;
   color: var(--orange-light); letter-spacing: 2px; text-transform: uppercase;
 }
 .hero-badge svg { width: 16px; height: 16px; }
 .hero h1 {
-  font-family: 'Montserrat', sans-serif; font-weight: 900;
+  font-family: 'Jost', sans-serif; font-weight: 900;
   font-size: clamp(2.5rem, 6vw, 4.2rem); color: var(--white);
   line-height: 1.1; margin-bottom: 20px;
 }
@@ -106,7 +106,7 @@ body {
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .btn-primary {
   background: var(--orange); color: var(--white); border: none;
-  padding: 16px 36px; border-radius: 8px; font-family: 'Montserrat', sans-serif;
+  padding: 16px 36px; border-radius: 8px; font-family: 'Jost', sans-serif;
   font-weight: 700; font-size: 1rem; cursor: pointer; text-decoration: none;
   transition: all 0.3s; display: inline-flex; align-items: center; gap: 10px;
   box-shadow: 0 4px 20px rgba(232, 116, 12, 0.35);
@@ -114,7 +114,7 @@ body {
 .btn-primary:hover { background: var(--orange-dark); transform: translateY(-2px); box-shadow: 0 6px 30px rgba(232, 116, 12, 0.45); }
 .btn-secondary {
   background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.2);
-  padding: 14px 34px; border-radius: 8px; font-family: 'Montserrat', sans-serif;
+  padding: 14px 34px; border-radius: 8px; font-family: 'Jost', sans-serif;
   font-weight: 700; font-size: 1rem; cursor: pointer; text-decoration: none;
   transition: all 0.3s; display: inline-flex; align-items: center; gap: 10px;
 }
@@ -123,17 +123,17 @@ body {
   display: flex; justify-content: center; gap: 48px; margin-top: 60px;
   padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.08);
 }
-.hero-stat-num { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 2.2rem; color: var(--orange); }
+.hero-stat-num { font-family: 'Jost', sans-serif; font-weight: 900; font-size: 2.2rem; color: var(--orange); }
 .hero-stat-label { font-size: 0.8rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
 
 section { padding: 100px 24px; }
 .section-header { text-align: center; margin-bottom: 64px; }
 .section-tag {
-  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.75rem;
+  font-family: 'Jost', sans-serif; font-weight: 700; font-size: 0.75rem;
   color: var(--orange); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px;
 }
 .section-title {
-  font-family: 'Montserrat', sans-serif; font-weight: 800;
+  font-family: 'Jost', sans-serif; font-weight: 800;
   font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--black); line-height: 1.2;
 }
 .section-line { width: 60px; height: 4px; background: var(--orange); margin: 20px auto 0; border-radius: 2px; }
@@ -162,7 +162,7 @@ section { padding: 100px 24px; }
 .service-card:hover .service-icon { background: var(--orange); }
 .service-icon svg { width: 32px; height: 32px; color: var(--orange); transition: color 0.3s; }
 .service-card:hover .service-icon svg { color: var(--white); }
-.service-card h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--black); margin-bottom: 12px; }
+.service-card h3 { font-family: 'Jost', sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--black); margin-bottom: 12px; }
 .service-card p { font-size: 0.9rem; color: var(--gray-700); line-height: 1.6; }
 
 .about { background: var(--white); }
@@ -178,9 +178,9 @@ section { padding: 100px 24px; }
   border-radius: 24px;
 }
 .about-logo-large { width: 180px; height: 180px; margin-bottom: 24px; opacity: 0.9; }
-.about-company-name { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 2rem; color: var(--orange); letter-spacing: 2px; }
+.about-company-name { font-family: 'Jost', sans-serif; font-weight: 900; font-size: 2rem; color: var(--orange); letter-spacing: 2px; }
 .about-since { font-size: 0.85rem; color: var(--gray-400); margin-top: 8px; letter-spacing: 3px; text-transform: uppercase; }
-.about-info h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--orange); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+.about-info h3 { font-family: 'Jost', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--orange); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
 .about-info p { font-size: 1rem; color: var(--gray-700); line-height: 1.8; margin-bottom: 24px; }
 .about-details { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
 .about-detail {
@@ -189,7 +189,7 @@ section { padding: 100px 24px; }
 }
 .about-detail svg { width: 20px; height: 20px; color: var(--orange); flex-shrink: 0; }
 .about-detail-text { font-size: 0.9rem; color: var(--gray-900); }
-.about-detail-label { font-weight: 600; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; }
+.about-detail-label { font-weight: 600; font-family: 'Jost', sans-serif; font-size: 0.75rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; }
 
 .hours { background: linear-gradient(to right, #1f1f32 0%, var(--black) 10%, var(--black) 90%, #1f1f32 100%); color: var(--white); }
 .hours .section-title { color: var(--white); }
@@ -213,7 +213,7 @@ section { padding: 100px 24px; }
 
 .reviews { background: var(--gray-100); }
 .reviews-top { display: flex; justify-content: center; align-items: center; gap: 16px; margin-bottom: 48px; }
-.reviews-score { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 3.5rem; color: var(--black); }
+.reviews-score { font-family: 'Jost', sans-serif; font-weight: 900; font-size: 3.5rem; color: var(--black); }
 .reviews-meta { display: flex; flex-direction: column; }
 .reviews-stars { display: flex; gap: 3px; margin-bottom: 4px; }
 .reviews-stars svg { width: 22px; height: 22px; color: #F5A623; }
@@ -248,9 +248,9 @@ section { padding: 100px 24px; }
 .review-avatar {
   width: 44px; height: 44px; border-radius: 50%;
   background: var(--orange); display: flex; align-items: center; justify-content: center;
-  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; color: var(--white);
+  font-family: 'Jost', sans-serif; font-weight: 700; font-size: 1rem; color: var(--white);
 }
-.review-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--black); }
+.review-name { font-family: 'Jost', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--black); }
 .review-date { font-size: 0.75rem; color: var(--gray-400); }
 .review-stars { display: flex; gap: 2px; margin-bottom: 14px; }
 .review-stars svg { width: 16px; height: 16px; color: #F5A623; }
@@ -277,7 +277,7 @@ section { padding: 100px 24px; }
   flex-shrink: 0;
 }
 .contact-icon svg { width: 22px; height: 22px; color: var(--orange); }
-.contact-label { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-400); margin-bottom: 4px; }
+.contact-label { font-family: 'Jost', sans-serif; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-400); margin-bottom: 4px; }
 .contact-value { font-size: 1rem; color: var(--gray-900); }
 .contact-value a { color: var(--orange); text-decoration: none; }
 .contact-value a:hover { text-decoration: underline; }
@@ -286,16 +286,16 @@ section { padding: 100px 24px; }
 
 /* ─── CONTACT FORM ─── */
 .contact-form-wrapper { max-width: 1100px; margin: 56px auto 0; }
-.contact-form-wrapper h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--black); margin-bottom: 28px; text-transform: uppercase; letter-spacing: 1px; }
+.contact-form-wrapper h3 { font-family: 'Jost', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--black); margin-bottom: 28px; text-transform: uppercase; letter-spacing: 1px; }
 .project-form { display: flex; flex-direction: column; gap: 20px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
-.form-group label { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.8rem; color: var(--gray-700); text-transform: uppercase; letter-spacing: 0.5px; }
+.form-group label { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.8rem; color: var(--gray-700); text-transform: uppercase; letter-spacing: 0.5px; }
 .form-group input,
 .form-group textarea,
 .form-group select {
   padding: 14px 16px; border: 2px solid var(--gray-200); border-radius: 10px;
-  font-family: 'Open Sans', sans-serif; font-size: 0.95rem; color: var(--gray-900);
+  font-family: 'Jost', sans-serif; font-size: 0.95rem; color: var(--gray-900);
   background: var(--white); transition: border-color 0.3s, box-shadow 0.3s; outline: none;
 }
 .form-group input:focus,
@@ -303,7 +303,7 @@ section { padding: 100px 24px; }
 .form-group select:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(232,116,12,0.1); }
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-submit { align-self: flex-start; margin-top: 8px; }
-.form-success { display: none; background: rgba(232,116,12,0.08); border: 1px solid rgba(232,116,12,0.3); border-radius: 10px; padding: 20px 24px; font-family: 'Montserrat', sans-serif; font-weight: 600; color: var(--orange); text-align: center; }
+.form-success { display: none; background: rgba(232,116,12,0.08); border: 1px solid rgba(232,116,12,0.3); border-radius: 10px; padding: 20px 24px; font-family: 'Jost', sans-serif; font-weight: 600; color: var(--orange); text-align: center; }
 @media (max-width: 700px) { .form-row { grid-template-columns: 1fr; } }
 
 /* ─── FOOTER BUTTONS & SOCIAL ─── */
@@ -324,7 +324,7 @@ section { padding: 100px 24px; }
 }
 .footer-action-btn-fb { 
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 10px 22px; border-radius: 8px; font-family: 'Montserrat', sans-serif;
+  padding: 10px 22px; border-radius: 8px; font-family: 'Jost', sans-serif;
   font-weight: 700; font-size: 0.82rem; text-decoration: none; letter-spacing: 0.5px;
   border: 2px solid rgba(24,119,242,0.4); color: #74a5f5;;
   transition: all 0.3s; background: rgba(255,255,255,0.04);
@@ -340,7 +340,7 @@ footer {
 .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
 .footer-logo { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; }
 .footer-logo svg { width: 36px; height: 36px; }
-.footer-logo span { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--orange); letter-spacing: 1px; }
+.footer-logo span { font-family: 'Jost', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--orange); letter-spacing: 1px; }
 .footer-badges { display: flex; justify-content: center; gap: 24px; margin-bottom: 24px; flex-wrap: wrap; }
 .footer-badge {
   display: inline-flex; align-items: center; gap: 8px;
@@ -373,7 +373,7 @@ footer {
 .gallery-item:hover::after { opacity: 1; }
 .gallery-item span {
   position: absolute; bottom: 14px; left: 16px; z-index: 2;
-  font-family: 'Montserrat', sans-serif; font-weight: 600;
+  font-family: 'Jost', sans-serif; font-weight: 600;
   font-size: 0.85rem; color: var(--white);
   opacity: 0; transform: translateY(8px);
   transition: all 0.3s;
@@ -441,7 +441,7 @@ footer {
   gap: 60px; flex-wrap: wrap; text-align: center;
 }
 .qr-text h2 {
-  font-family: 'Montserrat', sans-serif; font-weight: 800;
+  font-family: 'Jost', sans-serif; font-weight: 800;
   font-size: 1.8rem; color: var(--orange); margin-bottom: 10px;
 }
 .qr-text p { color: var(--gray-400); font-size: 1rem; }
