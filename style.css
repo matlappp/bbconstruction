@@ -72,7 +72,7 @@ body {
 /* ─── HERO ─── */
 .hero {
   min-height: 100vh; display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg, #354249 0%, #3d4c54 50%, #354249 100%);
+  background: linear-gradient(135deg, #28353c 0%, #2f3e46 50%, #28353c 100%);
   position: relative; overflow: hidden; padding: 100px 24px 80px;
 }
 .hero::before {
