@@ -45,6 +45,7 @@ body {
 .nav-logo-text { display: flex; flex-direction: column; }
 .nav-logo-title { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 1.25rem; color: var(--white); letter-spacing: 1px; line-height: 1.1; }
 .goudy-bb, .footer-logo span .goudy-bb { font-family: 'Sorts Mill Goudy', serif; font-weight: 500; }
+.about-bb { font-size: 2.4rem; }
 .nav-logo-sub { font-size: 0.65rem; color: var(--gray-400); letter-spacing: 2px; text-transform: uppercase; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
@@ -98,7 +99,7 @@ body {
 }
 .hero-badge svg { width: 16px; height: 16px; }
 .hero h1 {
-  font-family: 'Jost', sans-serif; font-weight: 900;
+  font-family: 'Jost', sans-serif; font-weight: 700;
   font-size: clamp(2.5rem, 6vw, 4.2rem); color: var(--white);
   line-height: 1.1; margin-bottom: 20px;
 }
@@ -179,7 +180,7 @@ section { padding: 100px 24px; }
   border-radius: 24px;
 }
 .about-logo-large { width: 180px; height: 180px; margin-bottom: 24px; opacity: 0.9; }
-.about-company-name { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 2rem; color: var(--white); letter-spacing: 2px; }
+.about-company-name { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 1.9rem; color: var(--white); letter-spacing: 2px; }
 .about-since { font-size: 0.85rem; color: var(--gray-400); margin-top: 8px; letter-spacing: 3px; text-transform: uppercase; }
 .about-info h3 { font-family: 'Jost', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--orange); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
 .about-info p { font-size: 1rem; color: var(--gray-700); line-height: 1.8; margin-bottom: 24px; }
