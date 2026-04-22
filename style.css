@@ -43,10 +43,11 @@ body {
 .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
 .nav-logo svg { width: 44px; height: 44px; }
 .nav-logo-text { display: flex; flex-direction: column; }
-.nav-logo-title { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 1.25rem; color: var(--white); letter-spacing: 1px; line-height: 1.1; }
+.nav-logo-title { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 1.25rem; color: var(--white); letter-spacing: 1px; line-height: 1; display: flex; align-items: baseline; gap: 8px; }
 .goudy-bb, .footer-logo span .goudy-bb { font-family: 'Sorts Mill Goudy', serif; font-weight: 500; }
 .about-bb { font-size: 2.4rem; }
-.nav-logo-sub { font-size: 0.65rem; color: var(--gray-400); letter-spacing: 2px; text-transform: uppercase; }
+.nav-bb { font-size: 1.75rem !important; }
+.nav-construction { font-size: 1rem; letter-spacing: 2px; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
   font-family: 'Jost', sans-serif; font-weight: 600; font-size: 0.85rem;
@@ -135,7 +136,7 @@ section { padding: 100px 24px; }
   color: var(--orange); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px;
 }
 .section-title {
-  font-family: 'Jost', sans-serif; font-weight: 800;
+  font-family: 'Jost', sans-serif; font-weight: 700;
   font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--black); line-height: 1.2;
 }
 .section-line { width: 60px; height: 4px; background: var(--orange); margin: 20px auto 0; border-radius: 2px; }
