@@ -1,0 +1,19 @@
+# B&B Construction — https://bbconstruction.ca
+User-agent: *
+Allow: /
+
+# Moteurs de recherche IA : accès explicitement autorisé pour que le site
+# puisse être cité dans ChatGPT, Claude, Perplexity, Gemini, Apple Intelligence
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://bbconstruction.ca/sitemap.xml

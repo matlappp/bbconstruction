@@ -70,7 +70,8 @@ const translations = {
       licensed: 'Licencié & assuré',
       copy: '© 2026 B&B Construction. Tous droits réservés. Réalisé par',
     },
-    pageTitle: 'B&B Construction - Rénovation résidentielle et commerciale',
+    pageTitle: 'B&B Construction | Rénovation Mont-Saint-Hilaire et Rive-Sud',
+    metaDescription: 'Entrepreneur en rénovation à Mont-Saint-Hilaire, sur la Rive-Sud et à Montréal : cuisine, salle de bain, sous-sol, agrandissement. Licence RBQ, membre APCHQ.',
   },
   en: {
     nav: { services: 'Services', about: 'About', hours: 'Hours', reviews: 'Reviews', contact: 'Contact' },
@@ -142,7 +143,8 @@ const translations = {
       licensed: 'Licensed & insured',
       copy: '© 2026 B&B Construction. All rights reserved. Made by',
     },
-    pageTitle: 'B&B Construction - Residential and commercial renovation',
+    pageTitle: 'B&B Construction | Renovation Contractor – Montreal South Shore',
+    metaDescription: "Renovation contractor in Mont-Saint-Hilaire, Montreal's South Shore and Montreal: kitchens, bathrooms, basements, home additions. RBQ licensed, APCHQ member.",
   },
 };
 
@@ -174,6 +176,8 @@ function applyLang(lang, updateUrl = true) {
   localStorage.setItem('bb_lang', lang);
   document.documentElement.lang = lang;
   document.title = translations[lang].pageTitle;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', translations[lang].metaDescription);
+  document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://bbconstruction.ca/' + (lang === 'en' ? '?lang=en' : ''));
 
   if (updateUrl) {
     const url = new URL(window.location.href);

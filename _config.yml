@@ -1,0 +1,4 @@
+# GitHub Pages : fichiers de travail à ne pas publier sur bbconstruction.ca
+exclude:
+  - CLAUDE.md
+  - .claude
