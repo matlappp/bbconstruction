@@ -8,6 +8,8 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="B&amp;B Construction">
 <meta name="theme-color" content="#1A1A1A">
+<!-- Empêche iOS de transformer la licence RBQ en lien téléphonique (les vrais liens tel: restent actifs) -->
+<meta name="format-detection" content="telephone=no">
 <meta name="geo.region" content="CA-QC">
 <meta name="geo.placename" content="Mont-Saint-Hilaire">
 
@@ -184,7 +186,7 @@
       <li><a href="#reviews" data-i18n="nav.reviews">Avis</a></li>
       <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <a href="tel:5147504771" class="nav-cta">📞 (514) 750-4771</a>
+    <a href="tel:5147504771" class="nav-cta">(514) 750-4771</a>
     <div class="nav-right">
       <button class="lang-toggle" id="lang-toggle" onclick="toggleLang()">EN</button>
       <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">
@@ -239,42 +241,42 @@
   <div class="services-grid">
     <div class="service-card fade-up">
       <div class="service-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 7h18"/><path d="M7 4.5h.01"/><path d="M10.5 4.5h.01"/><path d="M14 4.5h3"/><rect x="7" y="11" width="10" height="7" rx="1"/></svg>
       </div>
       <h3 data-i18n="services.kitchen.title">Cuisine</h3>
       <p data-i18n="services.kitchen.desc">Conception et rénovation complète de cuisines modernes et fonctionnelles, adaptées à votre style de vie.</p>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="16" height="6" rx="2"/><path d="M18 5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-8a2 2 0 0 0-2 2v2"/><rect x="8" y="16" width="4" height="6" rx="1"/></svg>
       </div>
       <h3 data-i18n="services.renovation.title">Rénovation</h3>
       <p data-i18n="services.renovation.desc">Transformation complète de votre espace de vie. De la planification à la finition, nous prenons tout en charge.</p>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 9h20"/><path d="M10 3v18"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 3h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0a3 3 0 0 0 6 0a3 3 0 0 0 6 0"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M10 21v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4"/></svg>
       </div>
       <h3 data-i18n="services.commercial.title">Rénovation commerciale</h3>
       <p data-i18n="services.commercial.desc">Aménagement et rénovation de locaux commerciaux pour optimiser votre espace professionnel.</p>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a2 2 0 012-2h8l6 6v14"/><path d="M14 2v6h6"/><circle cx="12" cy="16" r="3"/><path d="M9 16h6"/><path d="M12 13v6"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M4 12v3a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-3"/><path d="m7 19-1 2"/><path d="m17 19 1 2"/><path d="M6 12V5a2 2 0 0 1 4 0v1"/></svg>
       </div>
       <h3 data-i18n="services.bathroom.title">Salle de bain</h3>
       <p data-i18n="services.bathroom.desc">Rénovation de salles de bain élégantes et pratiques. Douches, bains, vanités et plus encore.</p>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="14" width="20" height="8" rx="1"/><path d="M2 14l4-8h12l4 8"/><path d="M6 14v8"/><path d="M18 14v8"/><path d="M12 6v8"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 3l9 7"/><path d="M5 8.5V12"/><path d="M19 8.5V12"/><path d="M2 12h20"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M16 15h-3v3h-3v3"/></svg>
       </div>
       <h3 data-i18n="services.basement.title">Sous-sol</h3>
       <p data-i18n="services.basement.desc">Aménagement et finition de sous-sol : salle familiale, bureau, chambre, salle de bain et plus encore.</p>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/><path d="M21 9l3 2"/><path d="M21 20h3v2h-3"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V11l6-6 6 6v10"/><path d="M15 14h5a1 1 0 0 1 1 1v6"/><path d="M2 21h20"/><path d="M7 21v-5h4v5"/><path d="M19 3v6"/><path d="M16 6h6"/></svg>
       </div>
       <h3 data-i18n="services.addition.title">Agrandissement</h3>
       <p data-i18n="services.addition.desc">Extension de votre maison pour gagner de l'espace : ajout de pièces, solarium, garage et plus.</p>
@@ -313,7 +315,7 @@
 </section>
 
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" aria-label="Fermer">✕</button>
+  <button class="lightbox-close" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
   <img id="lightbox-img" src="" alt="">
 </div>
 
@@ -498,7 +500,7 @@
       </button>
     </form>
     <div class="form-success" id="form-success" data-i18n="contact.success">
-      ✓ Votre demande a été envoyée! Martin vous contactera sous peu.
+      Votre demande a été envoyée! Martin vous contactera sous peu.
     </div>
   </div>
 </section>

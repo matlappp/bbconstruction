@@ -15,20 +15,20 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+/* Même couleur que la barre du haut, le pied de page et theme-color : Safari s'en sert pour teinter les bandes du téléphone */
+html { scroll-behavior: smooth; background: var(--black); }
 
 body {
   font-family: 'Jost', sans-serif;
   color: var(--gray-900);
-  background: var(--white);
+  background: var(--black);
   overflow-x: hidden;
 }
 
 /* ─── NAVBAR ─── */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background: rgba(26, 26, 26, 0.97);
-  backdrop-filter: blur(12px);
+  background: var(--black);
   border-bottom: 3px solid var(--orange);
   transition: box-shadow 0.3s;
 }
@@ -412,6 +412,7 @@ footer {
   transition: background 0.3s;
 }
 .lightbox-close:hover { background: var(--orange); }
+.lightbox-close svg { width: 22px; height: 22px; }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 600px) {
@@ -429,7 +430,7 @@ footer {
   .nav-links.show {
     display: flex; flex-direction: column; gap: 0;
     position: absolute; top: 70px; left: 0; right: 0;
-    background: rgba(26, 26, 26, 0.98);
+    background: var(--black);
     border-top: 1px solid rgba(255,255,255,0.08);
     padding: 8px 0 16px;
   }
