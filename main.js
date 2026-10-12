@@ -1,4 +1,3 @@
-// ==================== TRANSLATIONS ====================
 const translations = {
   fr: {
     nav: { services: 'Services', about: 'À propos', hours: 'Horaires', reviews: 'Avis', contact: 'Contact' },
@@ -25,7 +24,7 @@ const translations = {
     gallery: {
       tag: 'Réalisations',
       title: 'Galerie de projets',
-      img1: 'Salle de bain', img2: 'Sous-sol', img3: 'Salon', img4: 'Sous-sol', img5: 'École',
+      img1: 'Salle de bain', img2: 'Sous-sol', img3: 'Entrée', img4: 'Escalier', img5: 'Salle de lavage', img6: 'École',
     },
     about: {
       tag: 'À propos',
@@ -98,7 +97,7 @@ const translations = {
     gallery: {
       tag: 'Projects',
       title: 'Project Gallery',
-      img1: 'Bathroom', img2: 'Basement', img3: 'Living Room', img4: 'Basement', img5: 'School',
+      img1: 'Bathroom', img2: 'Basement', img3: 'Entryway', img4: 'Staircase', img5: 'Laundry Room', img6: 'School',
     },
     about: {
       tag: 'About',
@@ -148,7 +147,6 @@ const translations = {
   },
 };
 
-// ==================== LANGUAGE SYSTEM ====================
 let currentLang = 'fr';
 
 function getVal(obj, key) {
@@ -208,7 +206,6 @@ function initLang() {
   applyLang(lang, false);
 }
 
-// ==================== HOURS ====================
 const jsDay = new Date().getDay();
 const dayMap = [6, 0, 1, 2, 3, 4, 5];
 const todayIdx = dayMap[jsDay];
@@ -226,7 +223,6 @@ function renderHours(lang) {
   });
 }
 
-// ==================== REVIEWS ====================
 const reviews = [
   {
     name: 'Kevin Hu',
@@ -319,7 +315,6 @@ function renderReviews(lang) {
   updateCarousel();
 }
 
-// ==================== CAROUSEL ====================
 let currentIndex = 0;
 
 function getVisibleCount() {
@@ -369,19 +364,16 @@ track.addEventListener('touchend', e => {
   }
 });
 
-// ==================== NAVBAR SCROLL ====================
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ==================== FADE-UP OBSERVER ====================
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// ==================== LIGHTBOX ====================
 function openLightbox(el) {
   const src = el.querySelector('img').src;
   document.getElementById('lightbox-img').src = src;
@@ -394,7 +386,6 @@ function closeLightbox() {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-// ==================== CONTACT FORM ====================
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
@@ -427,12 +418,10 @@ if (contactForm) {
   });
 }
 
-// ==================== CLOSE MENU ON NAV CLICK ====================
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.querySelector('.nav-links').classList.remove('show');
   });
 });
 
-// ==================== INIT ====================
 initLang();
