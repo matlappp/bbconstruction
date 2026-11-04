@@ -396,6 +396,7 @@ if (contactForm) {
     if (submitSpan) submitSpan.textContent = t.submitting;
     contactForm.querySelector('.form-submit').disabled = true;
     const data = new FormData(contactForm);
+    data.set('langue', currentLang);
     try {
       const res = await fetch(contactForm.action, {
         method: 'POST', body: data, headers: { 'Accept': 'application/json' }
@@ -408,6 +409,7 @@ if (contactForm) {
       } else {
         if (submitSpan) submitSpan.textContent = t.submit;
         contactForm.querySelector('.form-submit').disabled = false;
+        if (window.turnstile) turnstile.reset();
         alert(t.error_retry);
       }
     } catch {

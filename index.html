@@ -458,7 +458,7 @@
 
   <div class="contact-form-wrapper fade-up">
     <h3 data-i18n="contact.form_title">Soumettez votre projet</h3>
-    <form action="https://formspree.io/f/xeedwljl" method="POST" class="project-form" id="contact-form">
+    <form action="https://bb-construction-formulaire.mathieulapalme.workers.dev" method="POST" class="project-form" id="contact-form">
       <div class="form-row">
         <div class="form-group">
           <label for="nom" data-i18n="contact.name_label">Nom complet *</label>
@@ -488,6 +488,12 @@
           <option value="plus-50000" data-i18n="contact.budget_50">Plus de 50 000 $</option>
         </select>
       </div>
+      <div class="form-trap" aria-hidden="true">
+        <label for="site_web">Site web</label>
+        <input type="text" id="site_web" name="site_web" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="langue" value="fr">
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAFWGQOtbEvV1Fc5Z" data-theme="light" data-size="flexible"></div>
       <button type="submit" class="btn-primary form-submit">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         <span data-i18n="contact.submit">Envoyer ma demande</span>
@@ -536,6 +542,7 @@
   </div>
 </footer>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="./main.js"></script>
 </body>
 </html>

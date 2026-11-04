@@ -1,0 +1,12 @@
+name = "bb-construction-formulaire"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+TO_EMAIL = "bbconstruction46@gmail.com"
+FROM_EMAIL = "Site web B&B Construction <formulaire@bbconstruction.ca>"
+ALLOWED_ORIGINS = "https://bbconstruction.ca,https://www.bbconstruction.ca"
+
+# Secrets (jamais dans ce fichier) :
+#   npx wrangler secret put RESEND_API_KEY
+#   npx wrangler secret put TURNSTILE_SECRET
